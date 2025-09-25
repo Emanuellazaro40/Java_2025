@@ -1,24 +1,23 @@
+import java.lang.classfile.instruction.SwitchCase;
+
 public class Main {
     public static void main(String[] args){
-        char caracter ='A';
+        char caracter ='a';
 
-       if(caracter == 'a' ||
-               caracter =='A'||
-               caracter== 'e' ||
-               caracter== 'E' ||
-               caracter == 'i' ||
-               caracter== 'I' ||
-               caracter=='o' ||
-               caracter== 'O' ||
-               caracter== 'u' ||
-               caracter=='U'
-       ){
-
-           System.out.println("É vogal");
-
-       }else {
-           System.out.println("É uma consoante");
-       }
+        switch (caracter){
+            case 'a': System.out.println("É vogal");
+                break;
+            case 'e': System.out.println("É vogal");
+                break;
+            case 'i': System.out.println("É vogal");
+                break;
+            case 'o': System.out.println("É vogal");
+                break;
+            case 'u': System.out.println("É vogal");
+                break;
+            default:
+                System.out.println("É uma consoante");
+        }
 
     }
 }
