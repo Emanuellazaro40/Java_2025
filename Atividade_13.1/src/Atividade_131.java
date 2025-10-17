@@ -45,6 +45,7 @@ public class Atividade_131 {
                 break;
             default:
                 System.out.println("Operador invalido! Tente novamente.");
+                break;
         }
 
         input.close(); // fechar o input para nao consumir memoria
